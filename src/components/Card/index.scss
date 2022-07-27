@@ -1,0 +1,39 @@
+@import '../../styles/global.scss';
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: fit-content;
+	background-color: #131017;
+	padding: 32px;
+	margin: 0 20px 32px;
+
+	&__title {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__title-text {
+		@include font(Archivo, 500, 24px, #fff);
+		margin-left: 20px;
+	}
+
+	&__description {
+		@include font(Archivo, 400, 15px, #fff);
+		line-height: 22.5px;
+		margin-bottom: 20px;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-self: flex-end;
+	}
+
+	&__button-text {
+		@include font(Archivo, 700, 15px, #A7EA72);
+	}
+}
+

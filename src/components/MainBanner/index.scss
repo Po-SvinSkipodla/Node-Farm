@@ -1,0 +1,28 @@
+@import 'styles/global.scss';
+
+.main-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10vw;
+
+	&__span {
+		@include font(GeneralSans-Variable, 500, 48px, #000);
+		text-shadow: 0.7px 0 #fff, 0 0.7px #fff, -0.7px 0 #fff, 0 -0.7px #fff;
+	}
+
+	&__title {
+		@include font(GeneralSans-Variable, 600, 48px, #fff);
+		text-align: center;
+		line-height: 65px;
+		margin-bottom: 4vw;
+	}
+
+	&__description {
+		@include font(Archivo, 500, 15px, #fff);
+		text-align: center;
+		line-height: 22px;
+		margin-bottom: 8vw;
+	}
+}

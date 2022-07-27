@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+.benefits {
+	display: flex;
+	flex-direction: row;
+	margin: 0 5vw 10vw;
+
+	&__description {
+		display: flex;
+	  flex-direction: column;
+		margin-left: 5vw;
+	}
+
+	&__title {
+		@include font(Archivo, 500, 20px, #fff);
+		margin-bottom: 5vw;
+	}
+
+	&__text {
+		@include font(Archivo, 400, 15px, #fff);
+		line-height: 22.5px;
+	}
+}
+
+
+

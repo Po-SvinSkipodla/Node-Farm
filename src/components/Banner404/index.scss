@@ -1,0 +1,26 @@
+@import 'styles/global.scss';
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10vw;
+	text-align: center;
+
+	&__big-title {
+		@include font(GeneralSans-Variable, 500, 110px, #fff);
+		margin-bottom: 24px;
+	}
+
+	&__small-title {
+		@include font(Archivo, 500, 36px, #fff);
+		margin-bottom: 32px;
+	}
+
+	&__description {
+		@include font(Archivo, 500, 15px, #fff);
+		margin-bottom: 32px;
+		line-height: 22.5px;
+	}
+}

@@ -1,0 +1,52 @@
+@import 'styles/global.scss';
+
+.btn{
+	display: flex;
+	align-items: center;
+  height: 50px;
+	border-radius: 5px;
+	padding: 0 32px;
+
+	&--small {
+		width: fit-content;
+	}
+
+	&--large {
+		justify-content: space-between;
+		width: 270px;
+	}
+
+	&--green {
+		background-color: #A7EA72;
+		color: #000;
+
+		svg path {
+			stroke: #000;
+		}
+	}
+
+	&--white {
+		background-color: #fff;
+		color: #000;
+
+		svg path {
+			stroke: #000;
+		}
+	}
+
+	&--grey {
+		background-color: #FFFFFF1A;
+		color: #fff;
+
+		svg path {
+			stroke: #fff;
+		}
+	}
+
+	&__text {
+		font-family: Archivo;
+		font-weight: 700;
+		font-size: 15px;
+		margin-right: 8px;
+	}
+}
