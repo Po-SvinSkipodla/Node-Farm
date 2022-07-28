@@ -11,5 +11,11 @@
 	position: relative;
 	background-image: url(../../assets/images/main-title-bg.png);
 	background-size: cover;
-	padding-bottom: 80vw;
+	padding-bottom: 230px;
+}
+
+@media (min-width: 750px) {
+	.main-title-container {
+		padding-bottom: 270px;
+	}
 }

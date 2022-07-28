@@ -37,6 +37,10 @@
 	&--grey {
 		background-color: #FFFFFF1A;
 		color: #fff;
+		display: none;
+		&:visited {
+			color: #fff;
+		}
 
 		svg path {
 			stroke: #fff;
@@ -48,5 +52,21 @@
 		font-weight: 700;
 		font-size: 15px;
 		margin-right: 8px;
+	}
+}
+
+@media (min-width:500px) {
+	.btn{
+		&--grey {
+			display: flex;
+		}
+	}
+}
+
+@media (min-width:500px) {
+	.btn{
+		&__text {
+			font-size: 16px;
+		}
 	}
 }

@@ -26,3 +26,16 @@
 		margin-bottom: 8vw;
 	}
 }
+
+@media (min-width:900px) {
+	.main-banner{
+		&__title {
+			font-size: 64px;
+		}
+
+		&__span {
+			font-size: 64px;
+			text-shadow: 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 0 -1px #fff;
+		}
+	}
+}

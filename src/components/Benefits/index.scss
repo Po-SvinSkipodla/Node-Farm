@@ -3,22 +3,44 @@
 .benefits {
 	display: flex;
 	flex-direction: row;
-	margin: 0 5vw 10vw;
+	width: 100%;
+	max-width: 460px;
+	margin: 0 0 32px;
 
 	&__description {
 		display: flex;
 	  flex-direction: column;
-		margin-left: 5vw;
+		margin-left: 16px;
 	}
 
 	&__title {
 		@include font(Archivo, 500, 20px, #fff);
-		margin-bottom: 5vw;
+		margin-bottom: 16px;
 	}
 
 	&__text {
 		@include font(Archivo, 400, 15px, #fff);
 		line-height: 22.5px;
+	}
+}
+
+@media (min-width: 500px) {
+	.benefits {
+		margin: 0 auto 32px;
+	}
+}
+
+@media (min-width: 715px) {
+	.benefits {
+		width: 338px;
+	}
+}
+
+@media (min-width: 900px) {
+	.benefits {
+		&__title {
+			font-size: 24px;
+		}		
 	}
 }
 

@@ -1,11 +1,17 @@
-import LogoImg from '../../assets/images/Logo.svg'
+import { LogoIcon } from 'assets/images'
+import { Button } from 'components'
 import './index.scss'
 
 export default function Logo() {
 
 	return(
 		<div className="header">
-			<img  src={LogoImg} alt="Logo.svg" className="header__image" />
+			<LogoIcon className="header__image" />
+			<Button
+			color={"grey"}
+			size={"small"}
+			content={"Launch App"}
+			link={"/"} />
 		</div>
 	)
 }

@@ -4,10 +4,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: fit-content;
+	width: 100%;
+	max-width: 400px;
 	background-color: #131017;
 	padding: 32px;
-	margin: 0 20px 32px;
+	margin: 0 0 32px 0;
 
 	&__title {
 		display: flex;
@@ -34,6 +35,33 @@
 
 	&__button-text {
 		@include font(Archivo, 700, 15px, #A7EA72);
+	}
+}
+
+@media (min-width: 500px) {
+	.card {
+		width: 100%;
+		margin: 0 auto 32px;
+	}
+}
+
+@media (min-width: 760px) {
+	.card {
+		width: 283px;
+		margin:0 0 32px 0;
+	}
+}
+
+@media (min-width: 800px) {
+	.card {
+		width: 351px;
+		margin: 0 auto 32px;
+	}
+}
+
+@media (min-width: 900px) {
+	.card {
+		margin: 0 0 32px;
 	}
 }
 
