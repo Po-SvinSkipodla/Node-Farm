@@ -58,13 +58,13 @@
 
 .c2a {
 	width: 280px;
-	margin: 0 20px 100px;
+	margin-bottom: 100px;
 }
 
 .beginners {
-	background-image: url(../../assets/images/beginners-bg.png);
+	background-image: url(../../assets/images/mobile-beginners-bg.png);
 	background-size: cover;
-	padding: 17vw 20px;
+	padding: 20vw 20px;
 	margin-bottom: 100px;
 }
 
@@ -86,7 +86,23 @@
 
 .wraper {
 	padding: 0 20px;
-	// width: 100%;
+}
+
+.card-container {
+	max-width: 1350px;
+	margin: 0 auto 100px; 
+}
+
+.benefits-container {
+	max-width: 850px;
+	margin:0 83px 100px auto;
+}
+
+@media (min-width: 600px) {
+	.c2a {
+		margin: 0 0 100px auto;
+	}
+	
 }
 
 @media (min-width: 750px) {
@@ -96,6 +112,16 @@
 
 	.beginners {
 		display: flex;
+		background-image: url(../../assets/images/tablet-beginner-bg.png);
+		background-size: cover;
+		padding: 10vw 20px;
+	}
+	
+}
+
+@media (min-width: 900px) {
+	.beginners {
+		padding: 13vw 20px;
 	}
 	
 }

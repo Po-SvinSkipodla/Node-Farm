@@ -32,7 +32,8 @@ export default function Main() {
 				<div className="wraper">
 					<SectionLayout
 					align={"center"}
-					title={"What can we offer you?"}>
+					title={"What can we offer you?"}
+					container={"benefits-container"}>
 						<Benefits 
 						img={Wallet} 
 						alt={"wallet-icon.png"} 
@@ -67,7 +68,8 @@ export default function Main() {
 					<SectionLayout
 					align={"center"}
 					title={"Leading nodes, one click away"}
-					description={"A list of hand-picked projects, available for you today"}>
+					description={"A list of hand-picked projects, available for you today"}
+					container={"card-container"}>
 						<Card
 						img={Subspace}
 						alt={"subspace-icon.png"}
@@ -148,14 +150,16 @@ export default function Main() {
 						profit={"7 000 - 10 000"} />
 					</Carousel>
 				</SectionLayout>
-				<div className="c2a">
-					<h2 className="banner-title">Don’t be the one to miss another opportunity</h2>
-					<p className="banner-description">Do your research and become a node runner today</p>
-					<Button
-					color={"green"}
-					size={"small"}
-					content={"Launch App"}
-					link={"/"} />
+				<div className="wraper">
+					<div className="c2a">
+						<h2 className="banner-title">Don’t be the one to miss another opportunity</h2>
+						<p className="banner-description">Do your research and become a node runner today</p>
+						<Button
+						color={"green"}
+						size={"small"}
+						content={"Launch App"}
+						link={"/"} />
+					</div>
 				</div>
 				{/* <Button color={"grey"} size={"small"} content={"Launch"} />
 				<Button color={"green"} size={"small"} content={"Launch App"} />
