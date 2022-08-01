@@ -40,7 +40,6 @@
 
 @media (min-width: 500px) {
 	.card {
-		width: 100%;
 		margin: 0 auto 32px;
 	}
 }
@@ -52,15 +51,15 @@
 	}
 }
 
-@media (min-width: 800px) {
+// @media (min-width: 800px) {
+// 	.card {
+// 		margin: 0 auto 32px;
+// 	}
+// }
+
+@media (min-width: 1000px) {
 	.card {
 		width: 351px;
-		margin: 0 auto 32px;
-	}
-}
-
-@media (min-width: 900px) {
-	.card {
 		margin: 0 0 32px;
 	}
 }

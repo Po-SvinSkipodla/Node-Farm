@@ -11,13 +11,13 @@
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	background-image: url(../../assets/images/main-title-bg.png);
+	background-image: url(../../assets/images/mobile-title-bg.png);
 	background-size: cover;
 	padding-bottom: 230px;
 }
 
 .background {
-	background-image: url(../../assets/images/BG.png);
+	background-image: url(../../assets/images/mobile-bg.png);
 	background-size: cover;
 }
 
@@ -89,14 +89,19 @@
 }
 
 .card-container {
-	max-width: 1350px;
+	max-width: 740px;
 	margin: 0 auto 100px; 
 }
 
 .benefits-container {
 	max-width: 850px;
-	margin:0 83px 100px auto;
+	margin:0 0 100px 0;
 }
+
+// .beginners-container {
+// 	max-width: 430px;
+// 	margin-left: 205px;
+// }
 
 @media (min-width: 600px) {
 	.c2a {
@@ -117,11 +122,70 @@
 		padding: 10vw 20px;
 	}
 	
+	.main-title-container {
+		background-image: url(../../assets/images/tablet-title-bg.png);
+	}
+
+	.background {
+		background-image: url(../../assets/images/tablet-bg.png);
+	}
 }
 
 @media (min-width: 900px) {
 	.beginners {
 		padding: 13vw 20px;
+		justify-content: center;
 	}
-	
+
+	.beginners-container {
+		max-width: 430px;
+		margin-left: 205px;
+	}
+
+	.benefits-container {
+		margin:0 auto 100px auto;
+	}
+}
+
+@media (min-width: 1000px) {
+	.c2a {
+		margin: 0 17.4vw 100px auto;
+		width: 455px;
+	}
+
+	.banner-title{
+		@include font(GeneralSans-Variable, 500, 40px, #fff);
+		line-height: 60px;
+		margin-bottom: 32px;
+	}
+
+	.card-container {
+		max-width: 870px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.benefits-container {
+		margin:0 83px 100px auto;
+	}
+
+	.main-title-container {
+		background-image: url(../../assets/images/desktop-title-bg.png);
+	}
+
+	.background {
+		background-image: url(../../assets/images/desktop-bg.png);
+	}
+}
+
+@media (min-width: 1350px) {
+	.card-container {
+		max-width: 1350px;
+	}
+
+	.beginners {
+		padding: 15vw 20px;
+		background-size: cover;
+		background-position: right;
+	}
 }

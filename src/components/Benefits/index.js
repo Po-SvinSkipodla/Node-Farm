@@ -3,7 +3,7 @@ import './index.scss'
 export default function Benefits({img, alt, title, text}) {
 
 	return(
-		<div className="benefits">
+		<article className="benefits">
 			<div>
 				<img src={img} alt={alt} />
 			</div>
@@ -11,6 +11,6 @@ export default function Benefits({img, alt, title, text}) {
 				<h3 className="benefits__title">{title}</h3>
 				<p className="benefits__text">{text}</p>
 			</div>
-		</div>
+		</article>
 	)
 }

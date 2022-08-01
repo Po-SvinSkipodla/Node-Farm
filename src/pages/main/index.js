@@ -1,8 +1,7 @@
-import { Spiral } from 'assets/images/index.js'
-import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from 'assets/icons'
-import { Logo, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner } from 'components'
-import Carousel from 'nuka-carousel'
-import './index.scss'
+import { Spiral } from "assets/images/index.js"
+import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
+import { Logo, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
+import "./index.scss"
 
 
 export default function Main() {
@@ -18,9 +17,9 @@ export default function Main() {
 				</div>
 			</div>
 			<div className="background">
-				<div className="beginners">
+				<section className="beginners">
 					<h2 className="banner-title">Never heard of nodes before?</h2>
-					<div>
+					<div className="beginners-container">
 						<p className="banner-description">If you’re unsure of what a node is or how the farming process works, be sure to check out our intro for beginners</p>
 						<Button
 						color={"white"}
@@ -28,7 +27,7 @@ export default function Main() {
 						content={"Get acquainted"}
 						link={"/"} />
 					</div>
-				</div>
+				</section>
 				<div className="wraper">
 					<SectionLayout
 					align={"center"}
@@ -105,21 +104,7 @@ export default function Main() {
 				<SectionLayout
 				align={"center"}
 				title={"Economics slider"} >
-					<Carousel
-					defaultControlsConfig={{
-						nextButtonStyle: {
-							display: "none"
-						},
-						prevButtonStyle: {
-							display: "none"
-						},
-						pagingDotsContainerClassName: "paging-dots",
-						pagingDotsClassName: "paging-dots__button"
-					}}
-					wrapAround={true}
-					pauseOnHover={true}
-					autoplay={true}
-					 >
+					<Slider>
 						<Slide
 						img={Horp}
 						alt={"horp-icon.png"}
@@ -148,7 +133,35 @@ export default function Main() {
 						tokens={"10 000"}
 						price={"0,7 - 1"}
 						profit={"7 000 - 10 000"} />
-					</Carousel>
+						<Slide
+						img={Horp}
+						alt={"horp-icon.png"}
+						title={"HORP"}
+						tokens={"10 000"}
+						price={"0,7 - 1"}
+						profit={"7 000 - 10 000"} />
+						<Slide
+						img={Casper}
+						alt={"horp-icon.png"}
+						title={"HORP"}
+						tokens={"10 000"}
+						price={"0,7 - 1"}
+						profit={"7 000 - 10 000"} />
+						<Slide
+						img={Solana}
+						alt={"horp-icon.png"}
+						title={"HORP"}
+						tokens={"10 000"}
+						price={"0,7 - 1"}
+						profit={"7 000 - 10 000"} />
+						<Slide
+						img={Forta}
+						alt={"horp-icon.png"}
+						title={"HORP"}
+						tokens={"10 000"}
+						price={"0,7 - 1"}
+						profit={"7 000 - 10 000"} />
+					</Slider>
 				</SectionLayout>
 				<div className="wraper">
 					<div className="c2a">
