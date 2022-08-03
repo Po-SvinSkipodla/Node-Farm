@@ -1,5 +1,5 @@
 import './index.scss'
-import ArrowGreen from 'assets/images/arrow-green.svg'
+import { ArrowRight } from 'assets/images'
 
 export default function Card({img, alt, title, text}) {
 
@@ -14,7 +14,7 @@ export default function Card({img, alt, title, text}) {
 			</div>
 			<div className="card__button">
 				<p className="card__button-text">Learn more</p>
-				<img src={ArrowGreen} alt="arrow-green.svg" />
+				<ArrowRight />
 			</div>
 		</article>
 	)

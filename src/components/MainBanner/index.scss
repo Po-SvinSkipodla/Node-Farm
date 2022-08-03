@@ -8,34 +8,30 @@
 	margin: 0 10vw;
 
 	&__span {
-		@include font(GeneralSans-Variable, 500, 48px, #000);
-		text-shadow: 0.7px 0 #fff, 0 0.7px #fff, -0.7px 0 #fff, 0 -0.7px #fff;
+		@include font(GeneralSans-Variable, 500, 48px, $black);
+		text-shadow: 0.7px 0 $white, 0 0.7px $white, -0.7px 0 $white, 0 -0.7px $white;
+
+		@media (min-width: $bp900) {
+			font-size: 64px;
+			text-shadow: 1px 0 $white, 0 1px $white, -1px 0 $white, 0 -1px $white;
+		}
 	}
 
 	&__title {
-		@include font(GeneralSans-Variable, 600, 48px, #fff);
+		@include font(GeneralSans-Variable, 600, 48px, $white);
 		text-align: center;
 		line-height: 65px;
 		margin-bottom: 4vw;
+
+		@media (min-width: $bp900) {
+			font-size: 64px;
+		}
 	}
 
 	&__description {
-		@include font(Archivo, 500, 15px, #fff);
+		@include font(Archivo, 500, 15px, $white);
 		text-align: center;
 		line-height: 22px;
 		margin-bottom: 30px;
-	}
-}
-
-@media (min-width:900px) {
-	.main-banner{
-		&__title {
-			font-size: 64px;
-		}
-
-		&__span {
-			font-size: 64px;
-			text-shadow: 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 0 -1px #fff;
-		}
 	}
 }

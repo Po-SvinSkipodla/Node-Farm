@@ -6,7 +6,7 @@
 	justify-content: space-between;
 	width: 100%;
 	max-width: 400px;
-	background-color: #131017;
+	background-color: $background;
 	padding: 32px;
 	margin: 0 0 32px 0;
 
@@ -17,12 +17,12 @@
 	}
 
 	&__title-text {
-		@include font(Archivo, 500, 24px, #fff);
+		@include font(Archivo, 500, 24px, $white);
 		margin-left: 20px;
 	}
 
 	&__description {
-		@include font(Archivo, 400, 15px, #fff);
+		@include font(Archivo, 400, 15px, $white);
 		line-height: 22.5px;
 		margin-bottom: 20px;
 	}
@@ -31,34 +31,40 @@
 		display: flex;
 		align-items: center;
 		justify-self: flex-end;
+		cursor: pointer;
+		color: $green;
+		transition: 0.25s;
+
+		svg path {
+			stroke: $green;
+		}
+
+		&:hover {
+			color: $white;
+
+			svg path{
+				stroke: $white;
+			}
+		}
 	}
 
 	&__button-text {
-		@include font(Archivo, 700, 15px, #A7EA72);
+		font-family: Archivo;
+		font-weight: 700;
+		font-size: 15px;
+		margin-right: 8px;
 	}
-}
 
-@media (min-width: 500px) {
-	.card {
+	@media (min-width: $bp500) {
 		margin: 0 auto 32px;
 	}
-}
 
-@media (min-width: 760px) {
-	.card {
+	@media (min-width: $bp750) {
 		width: 283px;
 		margin:0 0 32px 0;
 	}
-}
 
-// @media (min-width: 800px) {
-// 	.card {
-// 		margin: 0 auto 32px;
-// 	}
-// }
-
-@media (min-width: 1000px) {
-	.card {
+	@media (min-width: $bp1000) {
 		width: 351px;
 		margin: 0 0 32px;
 	}

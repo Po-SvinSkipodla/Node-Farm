@@ -2,16 +2,16 @@ import { LogoIcon } from 'assets/images'
 import { Button } from 'components'
 import './index.scss'
 
-export default function Logo() {
+export default function Header() {
 
 	return(
-		<div className="header">
+		<header className="header">
 			<LogoIcon className="header__image" />
 			<Button
 			color={"grey"}
 			size={"small"}
 			content={"Launch App"}
 			link={"/"} />
-		</div>
+		</header>
 	)
 }

@@ -14,35 +14,26 @@
 	}
 
 	&__title {
-		@include font(Archivo, 500, 20px, #fff);
+		@include font(Archivo, 500, 20px, $white);
 		margin-bottom: 16px;
+
+		@media (min-width: $bp900) {
+			font-size: 24px;	
+		}
 	}
 
 	&__text {
-		@include font(Archivo, 400, 15px, #fff);
+		@include font(Archivo, 400, 15px, $white);
 		line-height: 22.5px;
 	}
-}
 
-@media (min-width: 500px) {
-	.benefits {
+	@media (min-width: $bp500) {
 		margin: 0 auto 32px;
 	}
-}
 
-@media (min-width: 715px) {
-	.benefits {
+	@media (min-width: $bp750) {
 		width: 338px;
 	}
 }
-
-@media (min-width: 900px) {
-	.benefits {
-		&__title {
-			font-size: 24px;
-		}		
-	}
-}
-
 
 

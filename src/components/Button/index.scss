@@ -6,6 +6,9 @@
   height: 50px;
 	border-radius: 5px;
 	padding: 0 32px;
+	transition: 0.25s;
+	cursor: pointer;
+	z-index: 1;
 
 	&--small {
 		width: fit-content;
@@ -17,33 +20,58 @@
 	}
 
 	&--green {
-		background-color: #A7EA72;
-		color: #000;
+		background-color: $green;
+		color: $black;
 
 		svg path {
-			stroke: #000;
+			stroke: $black;
+		}
+
+		&:hover {
+			background-color: $pink;
+			color: $white;
+
+			svg path {
+				stroke: $white;
+			}
 		}
 	}
 
 	&--white {
-		background-color: #fff;
-		color: #000;
+		background-color: $white;
+		color: $black;
 
 		svg path {
-			stroke: #000;
+			stroke: $black;
+		}
+
+		&:hover {
+			background-color: $green;
 		}
 	}
 
 	&--grey {
-		background-color: #FFFFFF1A;
-		color: #fff;
+		background-color: $transparent;
+		color: $white;
 		display: none;
 		&:visited {
-			color: #fff;
+			color: $white;
 		}
 
 		svg path {
-			stroke: #fff;
+			stroke: $white;
+		}
+
+		&:hover {
+			color: $green;
+
+			svg path {
+				stroke: $green;
+			}
+		}
+
+		@media (min-width: $bp500) {
+			display: flex;
 		}
 	}
 
@@ -52,20 +80,8 @@
 		font-weight: 700;
 		font-size: 15px;
 		margin-right: 8px;
-	}
-}
 
-@media (min-width:500px) {
-	.btn{
-		&--grey {
-			display: flex;
-		}
-	}
-}
-
-@media (min-width:500px) {
-	.btn{
-		&__text {
+		@media (min-width: $bp500) {
 			font-size: 16px;
 		}
 	}

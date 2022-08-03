@@ -13,13 +13,13 @@
 	}
 
 	&__content {
-		@include font(GeneralSans-Variable, 500, 36px, #fff);
+		@include font(GeneralSans-Variable, 500, 36px, $white);
 		line-height: 54px;
 		margin-bottom: 32px;
 	}
 
 	&__description {
-		@include font(Archivo, 400, 15px, #fff);
+		@include font(Archivo, 400, 15px, $white);
 		line-height: 22.5px;
 	}
 }

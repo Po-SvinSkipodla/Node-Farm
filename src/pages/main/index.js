@@ -1,18 +1,16 @@
 import { Spiral } from "assets/images/index.js"
 import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
-import { Logo, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
+import { Header, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
 import "./index.scss"
 
 
 export default function Main() {
 	return(
 		<div>
-			<div className="main-title-container">
+			<div className="hero">
 				<img src={Spiral} alt="" className="spiral" />
 				<div>
-					<div>
-						<Logo />
-					</div>
+					<Header />
 					<MainBanner />
 				</div>
 			</div>

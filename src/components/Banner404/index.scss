@@ -2,11 +2,14 @@
 
 .not-found {
 	display: flex;
+	position: absolute;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0 10vw;
 	text-align: center;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 	&__big-title {
 		@include font(GeneralSans-Variable, 500, 110px, #fff);

@@ -1,7 +1,37 @@
-@mixin font($font, $weight, $size, $color) {
-	font-family: $font;
-	font-weight: $weight;
-	font-size: $size;
-	color: $color;
+@import "./mixins.scss";
+@import "./variabless.scss";
+
+.spiral {
+	width: 500px;
+	position: absolute;
+	top: 0px;
+	right: -160px;
+	z-index: 0;
 }
 
+.hero {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	background-image: url(../assets/images/mobile-title-bg.png);
+	background-size: cover;
+	padding-bottom: 230px;
+
+	&--404 {
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+		background-image: url(../assets/images/mobile-title-bg.png);
+		background-size: cover;
+		height: 100vh;
+	}
+
+	@media (min-width: $bp750) {
+		padding-bottom: 270px;
+		background-image: url(../assets/images/tablet-title-bg.png);
+	}
+
+	@media (min-width: $bp1200) {
+		background-image: url(../assets/images/desktop-title-bg.png);
+	}
+}

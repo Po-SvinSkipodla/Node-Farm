@@ -1,14 +1,14 @@
 import './index.scss'
 import { Spiral } from 'assets/images'
-import { Logo, Banner404 } from 'components'
+import { Header, Banner404 } from 'components'
 
 export default function NotFound() {
 
 	return(
-		<div className="main-title-container">
+		<div className="hero--404">
 			<img src={Spiral} alt="" className="spiral" />
 			<div>
-				<Logo />
+				<Header />
 				<Banner404 />
 			</div>
 		</div>
