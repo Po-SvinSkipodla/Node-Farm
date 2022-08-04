@@ -3,6 +3,8 @@
 .background {
 	background-image: url(../../assets/images/mobile-bg.png);
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
 
 	@media (min-width: $bp750) {
 		background-image: url(../../assets/images/tablet-bg.png);
@@ -10,6 +12,62 @@
 
 	@media (min-width: $bp1200) {
 		background-image: url(../../assets/images/desktop-bg.png);
+	}
+}
+
+.ellipse4 {
+	transform: translate(15px, 460px);
+}
+
+.ellipse5 {
+	transform: translate(350px, 485px);
+
+	svg {
+		width: 140px;
+		height: 140px;
+	}
+}
+
+.ellipse6 {
+	transform: translate(25px, 1470px);
+
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.ellipse7 {
+	transform: translate(225px, 3235px);
+	z-index: 0;
+
+	svg {
+		width: 133px;
+		height: 133px;
+	}
+}
+
+.ellipse8 {
+	transform: translate(130px, 4350px);
+	z-index: 0;
+
+	svg {
+		width: 123px;
+		height: 123px;
+	}
+}
+
+.torus {
+	top: 1425px;
+	left: 310px;
+}
+
+.eth2 {
+	transform: translate(270px, 4080px);
+	
+	svg {
+		width: 100px;
+		height: 100px;
 	}
 }
 

@@ -1,3 +1,10 @@
-export {default as Spiral} from 'assets/images/spiral.png'
-export {ReactComponent as ArrowRight} from 'assets/images/arrow-black.svg'
-export {ReactComponent as LogoIcon} from 'assets/images/Logo.svg'
+export { default as Spiral } from "./spiral.png"
+export { ReactComponent as ArrowRight } from "./arrow-black.svg"
+export { ReactComponent as LogoIcon } from "./Logo.svg"
+export { ReactComponent as BtcBubble } from "./bitcoin-bubble.svg"
+export { ReactComponent as EthBubble } from "./etherium-bubble.svg"
+export { ReactComponent as Ellipse } from "./ellipse-transparent.svg"
+export { default as Diamond } from "./diamond.png"
+export { default as LinEllipse} from "./line-ellipse.png"
+export { default as Torus } from "./torus-laying.png"
+export { default as Sphere } from "./sphere-ring.png"

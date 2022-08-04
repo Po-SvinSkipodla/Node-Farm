@@ -9,13 +9,65 @@
 	z-index: 0;
 }
 
+.decoration {
+	position:absolute;
+	z-index: 0;
+}
+
+.btc1 {
+	transform: translate(-85px, 150px);
+}
+
+.eth1 {
+	transform: translate(307px, 343px);
+}
+
+.ellipse1 {
+	transform: translate(150px, 100px);
+}
+
+.ellipse2 {
+	transform: translate(140px, 600px);
+
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
+.ellipse3 {
+	transform: translate(200px, 770px);
+
+	svg {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.diamond {
+	top: 505px;
+	left: -120px;
+}
+
+.lin-ellipse {
+	top: 545px;
+	left: 325px;
+}
+
+.sphere {
+	top: 4230px;
+	left: 260px;
+	z-index: 0;
+}
+
 .hero {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
 	background-image: url(../assets/images/mobile-title-bg.png);
 	background-size: cover;
-	padding-bottom: 230px;
+	padding-bottom: 235px;
 
 	&--404 {
 		overflow: hidden;

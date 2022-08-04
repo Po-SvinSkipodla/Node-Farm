@@ -1,20 +1,62 @@
-import { Spiral } from "assets/images/index.js"
+import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere } from "assets/images/index.js"
 import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
 import { Header, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
+import { Fade } from "react-reveal"
 import "./index.scss"
 
 
 export default function Main() {
 	return(
 		<div>
-			<div className="hero">
-				<img src={Spiral} alt="" className="spiral" />
-				<div>
-					<Header />
-					<MainBanner />
+			<Fade>
+				<div className="hero">
+					<img src={Spiral} alt="" className="spiral" />
+					<div className="decoration btc1">
+						<BtcBubble />
+					</div>
+					<div className="decoration eth1">
+						<EthBubble />
+					</div>
+					<div className="decoration ellipse1">
+						<Ellipse />
+					</div>
+					<div className="decoration ellipse2">
+						<Ellipse />
+					</div>
+					<div className="decoration ellipse3">
+						<Ellipse />
+					</div>
+					<img src={Diamond} alt="" className="decoration diamond" />
+					<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
+					<div>
+						<Fade bottom>
+							<Header />
+						</Fade>
+						<MainBanner />
+					</div>
 				</div>
-			</div>
+			</Fade>
 			<div className="background">
+				<div className="decoration ellipse4">
+					<Ellipse />
+				</div>
+				<div className="decoration ellipse5">
+					<Ellipse />
+				</div>
+				<div className="decoration ellipse6">
+					<Ellipse />
+				</div>
+				<img src={Torus} alt="" className="decoration torus" />
+				<div className="decoration ellipse7">
+					<Ellipse />
+				</div>
+				<img src={Sphere} alt="" className="decoration sphere" />
+				<div className="decoration eth2">
+						<EthBubble />
+				</div>
+				<div className="decoration ellipse8">
+					<Ellipse />
+				</div>
 				<section className="beginners">
 					<h2 className="banner-title">Never heard of nodes before?</h2>
 					<div className="beginners-container">
@@ -172,9 +214,6 @@ export default function Main() {
 						link={"/"} />
 					</div>
 				</div>
-				{/* <Button color={"grey"} size={"small"} content={"Launch"} />
-				<Button color={"green"} size={"small"} content={"Launch App"} />
-				<Button color={"white"} size={"large"} content={"Get aquaririrded"} />  */}
 				<Footer />
 			</div>
 		</div>
