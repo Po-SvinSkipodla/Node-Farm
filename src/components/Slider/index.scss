@@ -1,16 +1,19 @@
-@import "styles/global.scss";
+@import "styles/mixins.scss";
+@import "styles/variabless.scss";
 
 .slider-container {
 	width: 100% !important;
 }
 
 .slide {
+	// flex: 0 0 content !important;
 	display: flex !important;
 	justify-content: center !important;
 	background-color: #131017;
 	width: 200px !important;
 }
 
-.slider-frame {
-
-}
+// .slider-frame {
+// 	background-color: #131017;
+// 	width: 40vw !important;
+// }

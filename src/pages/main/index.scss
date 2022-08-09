@@ -1,4 +1,5 @@
-@import '../../styles/global.scss';
+@import "styles/mixins.scss";
+@import "styles/variabless.scss";
 
 .background {
 	background-image: url(../../assets/images/mobile-bg.png);
@@ -16,40 +17,79 @@
 }
 
 .ellipse4 {
-	transform: translate(15px, 460px);
+	top: -90px;
+	left: 0;
+
+	@media (min-width: $bp750) {
+		left: 40px;
+		top: -70px;
+	}
+
+	@media (min-width: $bp1350) {
+		left: -150px;
+		top: 80px;
+	}
 }
 
 .ellipse5 {
-	transform: translate(350px, 485px);
+	top: -45px;
+	right: -130px;
 
 	svg {
 		width: 140px;
 		height: 140px;
 	}
+
+	@media (min-width: $bp750) {
+		top: -45px;
+		right: -100px;
+	}
 }
 
 .ellipse6 {
-	transform: translate(25px, 1470px);
+	top: -95px;
+	left: 5px;
 
 	svg {
 		width: 40px;
 		height: 40px;
 	}
+
+	@media (min-width: $bp750) {
+		top: initial;
+		bottom: -15px;
+		left: 5px;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: 10px;
+		left: 280px;
+	}
 }
 
 .ellipse7 {
-	transform: translate(225px, 3235px);
-	z-index: 0;
+	bottom: 0px;
+	right: 0px;
 
 	svg {
 		width: 133px;
 		height: 133px;
 	}
+
+	@media (min-width: $bp750) {
+		bottom: -25px;
+		right: 50px;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: -50px;
+		right: 200px;
+	}
 }
 
 .ellipse8 {
-	transform: translate(130px, 4350px);
-	z-index: 0;
+	bottom: -170px;
+	right: 50px;
 
 	svg {
 		width: 123px;
@@ -57,13 +97,39 @@
 	}
 }
 
+.slider-rings {
+	top: -55px;
+	left: -165px;
+	display: none;
+
+	@media (min-width: $bp750) {
+		display: block;
+	}
+
+	@media (min-width: $bp1350) {
+		top: -70px;
+		left: 0;
+	}
+}
+
 .torus {
-	top: 1425px;
-	left: 310px;
+	bottom: -100px;
+	right: -150px;
+
+	@media (min-width: $bp750) {
+		bottom: -100px;
+		right: -120px;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: -200px;
+		right: -50px;
+	}
 }
 
 .eth2 {
-	transform: translate(270px, 4080px);
+	bottom: 120px;
+	right: -70px;
 	
 	svg {
 		width: 100px;
@@ -103,13 +169,13 @@
 .c2a {
 	width: 280px;
 	margin-bottom: 100px;
+	position: relative;
 
 	@media (min-width: $bp600) {
 		margin: 0 0 100px auto;
 	}
 
 	@media (min-width: $bp1000) {
-		margin: 0 17.4vw 100px auto;
 		width: 455px;
 	}
 }
@@ -132,7 +198,7 @@
 	}
 
 	@media (min-width: $bp1350) {
-		padding: 15vw 20px;
+		padding: 150px 20px;
 		background-size: cover;
 		background-position: right;
 	}
@@ -170,11 +236,12 @@
 
 	@media (min-width: $bp1350) {
 		max-width: 1350px;
+		margin: 0 auto 150px;
 	}
 }
 
 .benefits-container {
-	max-width: 850px;
+	max-width: 720px;
 	margin:0 0 100px 0;
 
 	@media (min-width: $bp900) {
@@ -182,7 +249,7 @@
 	}
 
 	@media (min-width: $bp1200) {
-		margin:0 83px 100px auto;
+		margin:0 0 100px auto;
 	}
 }
 

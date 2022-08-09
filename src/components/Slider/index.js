@@ -33,9 +33,9 @@ export default function Slider({children}) {
 			pagingDotsContainerClassName: "paging-dots",
 			pagingDotsClassName: "paging-dots__button"
 		}}
-		wrapAround={true}
-		pauseOnHover={true}
-		autoplay={true} >
+		wrapAround
+		pauseOnHover
+		autoplay >
 			{children}
 		</Carousel>
 	)

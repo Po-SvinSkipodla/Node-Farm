@@ -1,4 +1,4 @@
-import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere } from "assets/images/index.js"
+import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere, DiamondEllipse, SliderRings } from "assets/images/index.js"
 import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
 import { Header, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
 import { Fade } from "react-reveal"
@@ -10,7 +10,7 @@ export default function Main() {
 		<div>
 			<Fade>
 				<div className="hero">
-					<img src={Spiral} alt="" className="spiral" />
+					<img src={Spiral} alt="" className="decoration spiral" />
 					<div className="decoration btc1">
 						<BtcBubble />
 					</div>
@@ -27,6 +27,7 @@ export default function Main() {
 						<Ellipse />
 					</div>
 					<img src={Diamond} alt="" className="decoration diamond" />
+					<img src={DiamondEllipse} alt="" className="decoration diamond-ellipse" />
 					<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
 					<div>
 						<Fade bottom>
@@ -37,27 +38,10 @@ export default function Main() {
 				</div>
 			</Fade>
 			<div className="background">
-				<div className="decoration ellipse4">
-					<Ellipse />
-				</div>
-				<div className="decoration ellipse5">
-					<Ellipse />
-				</div>
-				<div className="decoration ellipse6">
-					<Ellipse />
-				</div>
-				<img src={Torus} alt="" className="decoration torus" />
-				<div className="decoration ellipse7">
-					<Ellipse />
-				</div>
-				<img src={Sphere} alt="" className="decoration sphere" />
-				<div className="decoration eth2">
-						<EthBubble />
-				</div>
-				<div className="decoration ellipse8">
-					<Ellipse />
-				</div>
 				<section className="beginners">
+					<div className="decoration btc2">
+						<BtcBubble />
+					</div>
 					<h2 className="banner-title">Never heard of nodes before?</h2>
 					<div className="beginners-container">
 						<p className="banner-description">If you’re unsure of what a node is or how the farming process works, be sure to check out our intro for beginners</p>
@@ -68,11 +52,18 @@ export default function Main() {
 						link={"/"} />
 					</div>
 				</section>
-				<div className="wraper">
+				<div className="wraper container">
 					<SectionLayout
 					align={"center"}
 					title={"What can we offer you?"}
 					container={"benefits-container"}>
+						<div className="decoration ellipse4">
+							<Ellipse />
+						</div>
+						<div className="decoration ellipse5">
+							<Ellipse />
+						</div>
+						<img src={Torus} alt="" className="decoration torus" />
 						<Benefits 
 						img={Wallet} 
 						alt={"wallet-icon.png"} 
@@ -109,11 +100,18 @@ export default function Main() {
 					title={"Leading nodes, one click away"}
 					description={"A list of hand-picked projects, available for you today"}
 					container={"card-container"}>
+						<div className="decoration ellipse6">
+							<Ellipse />
+						</div>
+						<div className="decoration ellipse7">
+							<Ellipse />
+						</div>
 						<Card
 						img={Subspace}
 						alt={"subspace-icon.png"}
 						title={"Subspace"}
-						text={"Fourth generation blockchain built for the next wave of crypto creators"} />
+						text={"Fourth generation blockchain built for the next wave of crypto creators"}
+						link="https://music.youtube.com/playlist?list=OLAK5uy_kKzmiwGsUH5BhqqgOfHDefQWiixN1q2EQ" />
 						<Card
 						img={Aptos}
 						alt={"aptos-icon.png"}
@@ -144,6 +142,7 @@ export default function Main() {
 				<SectionLayout
 				align={"center"}
 				title={"Economics slider"} >
+					<img src={SliderRings} alt="slider-rings.png" className="decoration slider-rings" />
 					<Slider>
 						<Slide
 						img={Horp}
@@ -203,8 +202,15 @@ export default function Main() {
 						profit={"7 000 - 10 000"} />
 					</Slider>
 				</SectionLayout>
-				<div className="wraper">
+				<div className="wraper container">
 					<div className="c2a">
+					<img src={Sphere} alt="" className="decoration sphere" />
+					<div className="decoration eth2">
+							<EthBubble />
+					</div>
+					<div className="decoration ellipse8">
+						<Ellipse />
+					</div>
 						<h2 className="banner-title">Don’t be the one to miss another opportunity</h2>
 						<p className="banner-description">Do your research and become a node runner today</p>
 						<Button

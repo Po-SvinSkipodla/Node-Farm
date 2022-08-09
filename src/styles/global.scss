@@ -1,12 +1,24 @@
-@import "./mixins.scss";
-@import "./variabless.scss";
+@import "styles/variabless.scss";
+
+.container {
+	max-width: 1350px;
+	margin: 0 auto;
+}
 
 .spiral {
 	width: 500px;
-	position: absolute;
 	top: 0px;
 	right: -160px;
-	z-index: 0;
+
+	@media (min-width: $bp750) {
+		top: 0px;
+		right: 15%;
+	}
+
+	@media (min-width: $bp1350) {
+		width: auto;
+		right: 10%;
+	}
 }
 
 .decoration {
@@ -18,12 +30,39 @@
 	transform: translate(-85px, 150px);
 }
 
+.btc2 {
+	right: 27px;
+	top: -17px;
+	display: none;
+
+	svg {
+		width: 85px;
+		height: 85px;
+	}
+
+	@media (min-width: $bp750) {
+		display: block;
+	}
+
+	@media (min-width: $bp1350) {
+		right: 65px;
+		top: -22px;
+
+		svg {
+			width: 110px;
+			height: 110px;
+		}
+	}
+}
+
 .eth1 {
-	transform: translate(307px, 343px);
+	top: 343px;
+	right: -60px;
 }
 
 .ellipse1 {
-	transform: translate(150px, 100px);
+	top: 100px;
+	left: 35%;
 }
 
 .ellipse2 {
@@ -37,28 +76,73 @@
 }
 
 .ellipse3 {
-	transform: translate(200px, 770px);
+	bottom: -60px;
+	right: 100px;
 
 	svg {
 		width: 100px;
 		height: 100px;
 	}
+
+	@media (min-width: $bp500) {
+		left: 35%;
+	}
+
+	@media (min-width: $bp1350) {
+		svg {
+			width: 130px;
+			height: 130px;
+		}
+	}
 }
 
 .diamond {
-	top: 505px;
+	bottom: -20px;
 	left: -120px;
+
+	@media (min-width: $bp750) {
+		bottom: 0;
+		left: 0;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: 0;
+		left: 110px;
+		width: 340px;
+	}
+}
+
+.diamond-ellipse {
+	bottom: 0px;
+	left: -350px;
+
+	@media (min-width: $bp750) {
+		bottom: 50px;
+		left: -180px;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: 70px;
+		left: 0;
+	}
 }
 
 .lin-ellipse {
-	top: 545px;
-	left: 325px;
+	bottom: 0;
+	right: -190px;
+
+	@media (min-width: $bp750) {
+		right: -52px;
+	}
+
+	@media (min-width: $bp1350) {
+		right: 0;
+	}
 }
 
 .sphere {
-	top: 4230px;
-	left: 260px;
-	z-index: 0;
+	bottom: -175px;
+	right: -290px;
 }
 
 .hero {
@@ -85,5 +169,6 @@
 
 	@media (min-width: $bp1200) {
 		background-image: url(../assets/images/desktop-title-bg.png);
+		padding-bottom: 300px;
 	}
 }

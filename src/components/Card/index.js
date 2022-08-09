@@ -1,7 +1,7 @@
 import './index.scss'
 import { ArrowRight } from 'assets/images'
 
-export default function Card({img, alt, title, text}) {
+export default function Card({img, alt, title, text, link}) {
 
 	return(
 		<article className="card">
@@ -12,10 +12,10 @@ export default function Card({img, alt, title, text}) {
 				</div>
 				<p className="card__description">{text}</p>
 			</div>
-			<div className="card__button">
+			<a target="_blank" href={link} className="card__button">
 				<p className="card__button-text">Learn more</p>
 				<ArrowRight />
-			</div>
+			</a>
 		</article>
 	)
 }
