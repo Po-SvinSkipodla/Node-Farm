@@ -3,6 +3,9 @@
 
 .slider-container {
 	width: 100% !important;
+	display: flex;
+	justify-content: center;
+	background-color:  #131017;
 }
 
 .slide {
@@ -13,7 +16,7 @@
 	width: 200px !important;
 }
 
-// .slider-frame {
-// 	background-color: #131017;
-// 	width: 40vw !important;
-// }
+.slider-frame {
+	background-color: #131017;
+	max-width: 2500px;
+}

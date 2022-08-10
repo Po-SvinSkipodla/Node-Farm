@@ -25,9 +25,9 @@
 		top: -70px;
 	}
 
-	@media (min-width: $bp1350) {
-		left: -150px;
-		top: 80px;
+	@media (min-width: $bp1200) {
+		left: 300px;
+		top: 570px;
 	}
 }
 
@@ -97,6 +97,16 @@
 	}
 }
 
+.benefits-spiral {
+	display: none;
+	left: 0;
+	top: 500px;
+
+	@media (min-width: $bp1200) {
+		display: block;
+	}
+}
+
 .slider-rings {
 	top: -55px;
 	left: -165px;
@@ -121,19 +131,48 @@
 		right: -120px;
 	}
 
+	@media (min-width: $bp900) {
+		bottom: -100px;
+	  right: -250px;
+	}
+
+	@media (min-width: $bp1200) {
+		bottom: -100px;
+	  right: -100px;
+	}
+
 	@media (min-width: $bp1350) {
-		bottom: -200px;
-		right: -50px;
+		display: none;
+	}
+}
+
+.torus-desktop {
+	display: none;
+
+	@media (min-width: $bp1350) {
+		display: block;
+		top: 1180px;
+		right: 0;
 	}
 }
 
 .eth2 {
-	bottom: 120px;
-	right: -70px;
+	bottom: 270px;
+	right: 10px;
 	
 	svg {
 		width: 100px;
 		height: 100px;
+	}
+
+	@media (min-width: $bp750) {
+		bottom: 380px;
+		right: 500px;
+
+		svg {
+			width: 130px;
+			height: 130px;
+		}
 	}
 }
 
@@ -171,12 +210,13 @@
 	margin-bottom: 100px;
 	position: relative;
 
-	@media (min-width: $bp600) {
+	@media (min-width: $bp750) {
 		margin: 0 0 100px auto;
 	}
 
 	@media (min-width: $bp1000) {
 		width: 455px;
+		margin-bottom: 150px;
 	}
 }
 
@@ -244,7 +284,7 @@
 	max-width: 720px;
 	margin:0 0 100px 0;
 
-	@media (min-width: $bp900) {
+	@media (min-width: $bp750) {
 		margin:0 auto 100px auto;
 	}
 

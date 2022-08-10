@@ -1,4 +1,5 @@
-import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere, DiamondEllipse, SliderRings } from "assets/images/index.js"
+import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere, DiamondEllipse, SliderRings, BenefitsSpiral,
+	SphereEllDesktop, SphereEllTablet, SphereEllMobile } from "assets/images/index.js"
 import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
 import { Header, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
 import { Fade } from "react-reveal"
@@ -10,11 +11,11 @@ export default function Main() {
 		<div>
 			<Fade>
 				<div className="hero">
-					<img src={Spiral} alt="" className="decoration spiral" />
-					<div className="decoration btc1">
+					<img src={Spiral} alt="" className="decoration bubble spiral" />
+					<div className="decoration bubble btc1">
 						<BtcBubble />
 					</div>
-					<div className="decoration eth1">
+					<div className="decoration bubble eth1">
 						<EthBubble />
 					</div>
 					<div className="decoration ellipse1">
@@ -26,8 +27,8 @@ export default function Main() {
 					<div className="decoration ellipse3">
 						<Ellipse />
 					</div>
-					<img src={Diamond} alt="" className="decoration diamond" />
-					<img src={DiamondEllipse} alt="" className="decoration diamond-ellipse" />
+					<img src={Diamond} alt="" className="decoration bubble diamond" />
+					<img src={DiamondEllipse} alt="" className="decoration bubble diamond-ellipse" />
 					<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
 					<div>
 						<Fade bottom>
@@ -53,6 +54,8 @@ export default function Main() {
 					</div>
 				</section>
 				<div className="wraper container">
+					<img src={BenefitsSpiral} alt="benefits-spiral.png" className="decoration bubble benefits-spiral" />
+					<img src={Torus} alt="torus-laying.png" className="decoration torus-desktop" />
 					<SectionLayout
 					align={"center"}
 					title={"What can we offer you?"}
@@ -63,7 +66,7 @@ export default function Main() {
 						<div className="decoration ellipse5">
 							<Ellipse />
 						</div>
-						<img src={Torus} alt="" className="decoration torus" />
+						<img src={Torus} alt="torus-laying.png" className="decoration torus" />
 						<Benefits 
 						img={Wallet} 
 						alt={"wallet-icon.png"} 
@@ -142,7 +145,7 @@ export default function Main() {
 				<SectionLayout
 				align={"center"}
 				title={"Economics slider"} >
-					<img src={SliderRings} alt="slider-rings.png" className="decoration slider-rings" />
+					<img src={SliderRings} alt="slider-rings.png" className="decoration bubble slider-rings" />
 					<Slider>
 						<Slide
 						img={Horp}
@@ -203,14 +206,17 @@ export default function Main() {
 					</Slider>
 				</SectionLayout>
 				<div className="wraper container">
-					<div className="c2a">
-					<img src={Sphere} alt="" className="decoration sphere" />
-					<div className="decoration eth2">
-							<EthBubble />
+					<img src={SphereEllMobile} alt="sphere-ellipse-mobile.png" className="decoration sphere-ell-mobile" />
+					<img src={SphereEllTablet} alt="sphere-ellipse-tablet.png" className="decoration sphere-ell-tablet" />
+					<img src={SphereEllDesktop} alt="sphere-ellipse-desktop.png" className="decoration sphere-ell-desktop" />
+					<img src={Sphere} alt="sphere.png" className="decoration bubble sphere" />
+					<div className="decoration bubble eth2">
+						<EthBubble />
 					</div>
 					<div className="decoration ellipse8">
 						<Ellipse />
 					</div>
+					<div className="c2a">
 						<h2 className="banner-title">Don’t be the one to miss another opportunity</h2>
 						<p className="banner-description">Do your research and become a node runner today</p>
 						<Button
