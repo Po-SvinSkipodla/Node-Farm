@@ -1,0 +1,43 @@
+@import "styles/variabless";
+
+
+.external-link {
+	display: flex;
+	align-items: center;
+	justify-self: flex-end;
+	cursor: pointer;
+	color: $green;
+	transition: 0.25s linear;
+
+	svg path {
+		stroke: $green;
+		transition: 0.25s linear;
+	}
+
+	&:visited {
+		color: $green;
+	}
+
+	&:hover {
+		color: $white;
+
+		svg path{
+			stroke: $white;
+		}
+	}
+
+	&:focus {
+		color: $green;
+
+		svg path {
+			stroke: $green;
+		}
+	}
+
+	&__text {
+		font-family: Archivo;
+		font-weight: 700;
+		font-size: 15px;
+		margin-right: 8px;
+	}
+}

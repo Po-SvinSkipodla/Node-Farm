@@ -26,13 +26,38 @@
 	z-index: 0;
 }
 
-.bubble {
-	animation: bubble 5s infinite;
-	animation-direction: alternate;
+.btc1 {
+	top: 140px;
+	left: -85px;
+	
+	@media (min-width: $bp750) {
+		left: 0;
+	}
+
+	@media (min-width: $bp1350) {
+		top: 190px;
+		left: -50px;
+
+		svg {
+			width: 190px;
+			height: 190px;
+		}
+	}
 }
 
-.btc1 {
-	transform: translate(-85px, 150px);
+.btc3 {
+	bottom: 70px;
+	right: 300px;
+	display: none;
+
+	svg {
+		width: 190px;
+		height: 190px;
+	}
+
+	@media (min-width: $bp1350) {
+		display: block;
+	}
 }
 
 .btc2 {
@@ -60,24 +85,76 @@
 	}
 }
 
+.btc4 {
+	bottom: 455px;
+	left: 75px;
+	rotate: -40deg;
+	display: none;
+
+	svg {
+		width: 115px;
+		height: 115px;
+	}
+
+	@media (min-width: $bp1350) {
+		display: block;
+	}
+
+}
+
 .eth1 {
 	top: 343px;
 	right: -60px;
+
+	@media (min-width: $bp750) {
+		top: 343px;
+		right: -35px;
+	}
+
+	@media (min-width: $bp1350) {
+		top: 343px;
+		right: 100px;
+	}
 }
 
 .ellipse1 {
 	top: 100px;
-	left: 35%;
+	right: 150px;
+
+	@media (min-width: $bp750) {
+		top: 90px;
+		right: 430px;
+	}
+
+	@media (min-width: $bp1350) {
+		top: 100px;
+		right: 600px;
+	}
 }
 
 .ellipse2 {
-	transform: translate(140px, 600px);
+	bottom: 170px;
+	left: 120px;
 
 	svg {
 		width: 40px;
 		height: 40px;
 	}
 
+	@media (min-width: $bp750) {
+		bottom: 220px;
+		left: 280px;
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: 40px;
+		left: 20px;
+
+		svg {
+			width: 60px;
+			height: 60px;
+		}
+	}
 }
 
 .ellipse3 {
@@ -162,8 +239,8 @@
 }
 
 .sphere-ell-mobile {
-	right: 0;
-	bottom: 0;
+	right: -260px;
+	bottom: -100px;
 
 	@media (min-width: $bp750) {
 		display: none;
@@ -209,6 +286,7 @@
 		background-image: url(../assets/images/mobile-title-bg.png);
 		background-size: cover;
 		height: 100vh;
+		// padding-bottom: 200px;
 	}
 
 	@media (min-width: $bp750) {
@@ -222,8 +300,3 @@
 	}
 }
 
-@keyframes bubble {
-	0% {transform: translate(0, 0);}
-	50% {transform: translate(0, -10px);}
-	100% {transform: translate(0, 0);}
-}

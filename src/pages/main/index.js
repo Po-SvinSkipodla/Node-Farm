@@ -9,15 +9,8 @@ import "./index.scss"
 export default function Main() {
 	return(
 		<div>
-			<Fade>
+			{/* <Fade> */}
 				<div className="hero">
-					<img src={Spiral} alt="" className="decoration bubble spiral" />
-					<div className="decoration bubble btc1">
-						<BtcBubble />
-					</div>
-					<div className="decoration bubble eth1">
-						<EthBubble />
-					</div>
 					<div className="decoration ellipse1">
 						<Ellipse />
 					</div>
@@ -27,22 +20,38 @@ export default function Main() {
 					<div className="decoration ellipse3">
 						<Ellipse />
 					</div>
-					<img src={Diamond} alt="" className="decoration bubble diamond" />
-					<img src={DiamondEllipse} alt="" className="decoration bubble diamond-ellipse" />
-					<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
-					<div>
+					<Fade top>
+						<img src={Spiral} alt="" className="decoration spiral" />
+					</Fade>
+					<Fade bottom>
+						<div className="decoration btc1">
+							<BtcBubble />
+						</div>
+						<div className="decoration btc3">
+							<BtcBubble />
+						</div>
+						<div className="decoration eth1">
+							<EthBubble />
+						</div>
+						<img src={Diamond} alt="" className="decoration diamond" />
+						<img src={DiamondEllipse} alt="" className="decoration diamond-ellipse" />
+						<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
+					</Fade>
+					<div className="wraper container">
 						<Fade bottom>
 							<Header />
+							<MainBanner />
 						</Fade>
-						<MainBanner />
 					</div>
 				</div>
-			</Fade>
+			{/* </Fade> */}
 			<div className="background">
+				<Fade bottom>
 				<section className="beginners">
 					<div className="decoration btc2">
 						<BtcBubble />
 					</div>
+					<div className="flash" />
 					<h2 className="banner-title">Never heard of nodes before?</h2>
 					<div className="beginners-container">
 						<p className="banner-description">If you’re unsure of what a node is or how the farming process works, be sure to check out our intro for beginners</p>
@@ -53,13 +62,17 @@ export default function Main() {
 						link={"/"} />
 					</div>
 				</section>
+				</Fade>
 				<div className="wraper container">
-					<img src={BenefitsSpiral} alt="benefits-spiral.png" className="decoration bubble benefits-spiral" />
+					<Fade bottom>
+					<img src={BenefitsSpiral} alt="benefits-spiral.png" className="decoration benefits-spiral" />
 					<img src={Torus} alt="torus-laying.png" className="decoration torus-desktop" />
+					</Fade>
 					<SectionLayout
 					align={"center"}
 					title={"What can we offer you?"}
 					container={"benefits-container"}>
+						<Fade bottom>
 						<div className="decoration ellipse4">
 							<Ellipse />
 						</div>
@@ -97,12 +110,14 @@ export default function Main() {
 						alt={"payment-icon.png"} 
 						title={"Auto-payment"} 
 						text={"Money is automatically withdrawn from your system account. No need to worry about paying in time"} />
+						</Fade>
 					</SectionLayout>
 					<SectionLayout
 					align={"center"}
 					title={"Leading nodes, one click away"}
 					description={"A list of hand-picked projects, available for you today"}
 					container={"card-container"}>
+						<Fade bottom>
 						<div className="decoration ellipse6">
 							<Ellipse />
 						</div>
@@ -140,12 +155,14 @@ export default function Main() {
 						alt={"massa-icon.png"}
 						title={"Massa"}
 						text={"Fourth generation blockchain built for the next wave of crypto creators"} />
+						</Fade>
 					</SectionLayout>
 				</div>
+				<Fade bottom>
 				<SectionLayout
 				align={"center"}
 				title={"Economics slider"} >
-					<img src={SliderRings} alt="slider-rings.png" className="decoration bubble slider-rings" />
+					<img src={SliderRings} alt="slider-rings.png" className="decoration slider-rings" />
 					<Slider>
 						<Slide
 						img={Horp}
@@ -205,15 +222,29 @@ export default function Main() {
 						profit={"7 000 - 10 000"} />
 					</Slider>
 				</SectionLayout>
+				</Fade>
 				<div className="wraper container">
+					<Fade bottom>
 					<img src={SphereEllMobile} alt="sphere-ellipse-mobile.png" className="decoration sphere-ell-mobile" />
 					<img src={SphereEllTablet} alt="sphere-ellipse-tablet.png" className="decoration sphere-ell-tablet" />
 					<img src={SphereEllDesktop} alt="sphere-ellipse-desktop.png" className="decoration sphere-ell-desktop" />
-					<img src={Sphere} alt="sphere.png" className="decoration bubble sphere" />
-					<div className="decoration bubble eth2">
+					<img src={Sphere} alt="sphere.png" className="decoration sphere" />
+					<div className="decoration eth2">
 						<EthBubble />
 					</div>
+					<div className="decoration btc4">
+						<BtcBubble />
+					</div>
 					<div className="decoration ellipse8">
+						<Ellipse />
+					</div>
+					<div className="decoration ellipse9">
+						<Ellipse />
+					</div>
+					<div className="decoration ellipse10">
+						<Ellipse />
+					</div>
+					<div className="decoration ellipse11">
 						<Ellipse />
 					</div>
 					<div className="c2a">
@@ -225,6 +256,7 @@ export default function Main() {
 						content={"Launch App"}
 						link={"/"} />
 					</div>
+					</Fade>
 				</div>
 				<Footer />
 			</div>

@@ -1,5 +1,6 @@
-import './index.scss'
-import { ArrowRight } from 'assets/images'
+import "./index.scss"
+import { ArrowRight } from "assets/images"
+import { ExternalLink } from "components"
 
 export default function Card({img, alt, title, text, link}) {
 
@@ -12,10 +13,7 @@ export default function Card({img, alt, title, text, link}) {
 				</div>
 				<p className="card__description">{text}</p>
 			</div>
-			<a target="_blank" href={link} className="card__button">
-				<p className="card__button-text">Learn more</p>
-				<ArrowRight />
-			</a>
+			<ExternalLink link={link} />
 		</article>
 	)
 }

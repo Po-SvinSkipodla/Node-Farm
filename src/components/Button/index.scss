@@ -10,6 +10,7 @@
 	transition: 0.25s linear;
 	cursor: pointer;
 	z-index: 1;
+	-webkit-tap-highlight-color: transparent;
 
 	&--small {
 		width: fit-content;
@@ -26,7 +27,12 @@
 
 		svg path {
 			stroke: $black;
+			transition: 0.25s linear;
 		}
+
+		// &:visited {
+		// 	background-color: $green;
+		// }
 
 		&:hover {
 			background-color: $pink;
@@ -34,6 +40,15 @@
 
 			svg path {
 				stroke: $white;
+			}
+		}
+
+		&:focus {
+			background-color: $green;
+			color: $black;
+
+			svg path {
+				stroke: $black;
 			}
 		}
 	}
@@ -44,10 +59,15 @@
 
 		svg path {
 			stroke: $black;
+			transition: 0.25s linear;
 		}
 
 		&:hover {
 			background-color: $green;
+		}
+
+		&:focus {
+			background-color: $white;
 		}
 	}
 
@@ -55,12 +75,14 @@
 		background-color: $transparent;
 		color: $white;
 		display: none;
+
 		&:visited {
 			color: $white;
 		}
 
 		svg path {
 			stroke: $white;
+			transition: 0.25s linear;
 		}
 
 		&:hover {
@@ -68,6 +90,14 @@
 
 			svg path {
 				stroke: $green;
+			}
+		}
+
+		&:focus {
+			color: $white;
+
+			svg path {
+				stroke: $white;
 			}
 		}
 

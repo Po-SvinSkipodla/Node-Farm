@@ -29,46 +29,6 @@
 		margin-bottom: 20px;
 	}
 
-	&__button {
-		display: flex;
-		align-items: center;
-		justify-self: flex-end;
-		cursor: pointer;
-		color: $green;
-		transition: 0.25s linear;
-
-		svg path {
-			stroke: $green;
-		}
-
-		&:visited {
-			color: $green;
-		}
-
-		&:hover {
-			color: $white;
-
-			svg path{
-				stroke: $white;
-			}
-		}
-
-		&:focus {
-			color: $green;
-
-			svg path {
-				stroke: $green;
-			}
-		}
-	}
-
-	&__button-text {
-		font-family: Archivo;
-		font-weight: 700;
-		font-size: 15px;
-		margin-right: 8px;
-	}
-
 	@media (min-width: $bp500) {
 		margin: 0 auto 32px;
 	}

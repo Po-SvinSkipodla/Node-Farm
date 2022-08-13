@@ -1,11 +1,12 @@
-export {default as MainBanner} from 'components/MainBanner'
-export {default as Card} from 'components/Card'
-export {default as Header} from 'components/Header'
-export {default as Button} from 'components/Button'
-export {default as Benefits} from 'components/Benefits'
-export {default as Slide} from 'components/Slide'
-export {default as Slider} from 'components/Slider'
-export {default as SectionLayout} from 'components/SectionLayout'
-export {default as SectionTitle} from 'components/SectionTitle'
-export {default as Banner404} from 'components/Banner404'
-export {default as Footer} from 'components/Footer'
+export { default as MainBanner } from "components/MainBanner"
+export { default as Card } from "components/Card"
+export { default as Header } from "components/Header"
+export { default as Button } from "components/Button"
+export { default as Benefits } from "components/Benefits"
+export { default as Slide } from "components/Slide"
+export { default as Slider } from "components/Slider"
+export { default as SectionLayout } from "components/SectionLayout"
+export { default as SectionTitle } from "components/SectionTitle"
+export { default as Banner404 } from "components/Banner404"
+export { default as Footer } from "components/Footer"
+export { default as ExternalLink } from "components/ExternalLink"

@@ -2,7 +2,7 @@
 
 .ellipse1-404 {
 	top: 60px;
-	left: 135px;
+	left: 35%;
 }
 
 .ellipse2-404 {
@@ -16,11 +16,42 @@
 }
 
 .ellipse3-404 {
-	bottom: 0px;
-	right: 50px;
+	bottom: -70px;
+	right: 140px;
 
 	svg {
 		width: 123px;
 		height: 123px;
+	}
+}
+
+.sphere-404 {
+	bottom: -110px;
+	right: -215px;
+
+	@media (min-width: $bp750) {
+		right: -190px;
+		bottom: -50px;
+		width: 400px;
+	}
+
+	@media (min-width: $bp1350) {
+		right: -25px;
+		bottom: 50px;
+	}
+}
+
+.sphere-ell-mobile-404 {
+	right: -300px;
+	bottom: -100px;
+
+	@media (min-width: $bp750) {
+		right: -140px;
+		bottom: -35px;
+	}
+
+	@media (min-width: $bp1350) {
+		right: 0;
+		bottom: 0;
 	}
 }

@@ -16,6 +16,17 @@
 	}
 }
 
+.flash {
+	background: radial-gradient(closest-side, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+	width: 120px;
+	height: 70px;
+	border-radius: 70px;
+	position: absolute;
+	z-index: 3;
+	right: -40px;
+	top: -40px;
+}
+
 .ellipse4 {
 	top: -90px;
 	left: 0;
@@ -88,12 +99,68 @@
 }
 
 .ellipse8 {
-	bottom: -170px;
-	right: 50px;
+	bottom: -30px;
+	right: 130px;
 
 	svg {
 		width: 123px;
 		height: 123px;
+	}
+
+	@media (min-width: $bp750) {
+		bottom: 120px;
+		right: -30px;
+	}
+
+	@media (min-width: $bp1350) {
+		right: initial;
+		left: 600px;
+		bottom: -30px;
+	}
+}
+
+.ellipse9 {
+	bottom: 280px;
+	right: 5px;
+	display: none;
+
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	@media (min-width: $bp1350) {
+		display: block;
+	}
+}
+
+.ellipse10 {
+	bottom: 80px;
+	right: 80px;
+	display: none;
+
+	svg {
+		width: 160px;
+		height: 160px;
+	}
+
+	@media (min-width: $bp1350) {
+		display: block;
+	}
+}
+
+.ellipse11 {
+	bottom: 50px;
+	left: 40px;
+	display: none;
+
+	svg {
+		width: 70px;
+		height: 70px;
+	}
+
+	@media (min-width: $bp1350) {
+		display: block;
 	}
 }
 
@@ -173,6 +240,12 @@
 			width: 130px;
 			height: 130px;
 		}
+	}
+
+	@media (min-width: $bp1350) {
+		bottom: 380px;
+		right: initial;
+		left: 500px;
 	}
 }
 

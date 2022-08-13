@@ -22,7 +22,7 @@
 		@include font(GeneralSans-Variable, 600, 48px, $white);
 		text-align: center;
 		line-height: 65px;
-		margin-bottom: 4vw;
+		margin-bottom: 30px;
 
 		@media (min-width: $bp900) {
 			font-size: 64px;
