@@ -5,7 +5,6 @@
 	background-image: url(../../assets/images/mobile-bg.png);
 	background-size: cover;
 	position: relative;
-	overflow: hidden;
 
 	@media (min-width: $bp750) {
 		background-image: url(../../assets/images/tablet-bg.png);
@@ -14,6 +13,13 @@
 	@media (min-width: $bp1200) {
 		background-image: url(../../assets/images/desktop-bg.png);
 	}
+}
+
+.lin-ellipse-box {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 2;
 }
 
 .flash {

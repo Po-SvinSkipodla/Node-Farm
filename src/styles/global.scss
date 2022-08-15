@@ -1,5 +1,9 @@
 @import "styles/variabless.scss";
 
+.window {
+	overflow: hidden;
+}
+
 .container {
 	max-width: 1350px;
 	margin: 0 auto;
@@ -12,12 +16,12 @@
 
 	@media (min-width: $bp750) {
 		top: 0px;
-		right: 15%;
+		right: 125px;
 	}
 
 	@media (min-width: $bp1350) {
 		width: auto;
-		right: 10%;
+		right: 135px;
 	}
 }
 
@@ -272,7 +276,6 @@
 }
 
 .hero {
-	overflow: hidden;
 	width: 100%;
 	position: relative;
 	background-image: url(../assets/images/mobile-title-bg.png);
@@ -286,7 +289,6 @@
 		background-image: url(../assets/images/mobile-title-bg.png);
 		background-size: cover;
 		height: 100vh;
-		// padding-bottom: 200px;
 	}
 
 	@media (min-width: $bp750) {

@@ -8,7 +8,7 @@ import "./index.scss"
 
 export default function Main() {
 	return(
-		<div>
+		<div className="window">
 			{/* <Fade> */}
 				<div className="hero">
 					<div className="decoration ellipse1">
@@ -35,7 +35,12 @@ export default function Main() {
 						</div>
 						<img src={Diamond} alt="" className="decoration diamond" />
 						<img src={DiamondEllipse} alt="" className="decoration diamond-ellipse" />
-						<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
+						<div className="lin-ellipse-box">
+							<div className="decoration btc2">
+								<BtcBubble />
+							</div>
+							<img src={LinEllipse} alt="" className="decoration lin-ellipse" />
+						</div>
 					</Fade>
 					<div className="wraper container">
 						<Fade bottom>
@@ -46,12 +51,9 @@ export default function Main() {
 				</div>
 			{/* </Fade> */}
 			<div className="background">
-				<Fade bottom>
 				<section className="beginners">
-					<div className="decoration btc2">
-						<BtcBubble />
-					</div>
-					<div className="flash" />
+				<div className="flash" />
+				<Fade bottom>
 					<h2 className="banner-title">Never heard of nodes before?</h2>
 					<div className="beginners-container">
 						<p className="banner-description">If you’re unsure of what a node is or how the farming process works, be sure to check out our intro for beginners</p>
@@ -61,18 +63,18 @@ export default function Main() {
 						content={"Get acquainted"}
 						link={"/"} />
 					</div>
-				</section>
 				</Fade>
+				</section>
 				<div className="wraper container">
 					<Fade bottom>
 					<img src={BenefitsSpiral} alt="benefits-spiral.png" className="decoration benefits-spiral" />
 					<img src={Torus} alt="torus-laying.png" className="decoration torus-desktop" />
 					</Fade>
+					<Fade bottom>
 					<SectionLayout
 					align={"center"}
 					title={"What can we offer you?"}
 					container={"benefits-container"}>
-						<Fade bottom>
 						<div className="decoration ellipse4">
 							<Ellipse />
 						</div>
@@ -110,14 +112,14 @@ export default function Main() {
 						alt={"payment-icon.png"} 
 						title={"Auto-payment"} 
 						text={"Money is automatically withdrawn from your system account. No need to worry about paying in time"} />
-						</Fade>
 					</SectionLayout>
+					</Fade>
+					<Fade bottom>
 					<SectionLayout
 					align={"center"}
 					title={"Leading nodes, one click away"}
 					description={"A list of hand-picked projects, available for you today"}
 					container={"card-container"}>
-						<Fade bottom>
 						<div className="decoration ellipse6">
 							<Ellipse />
 						</div>
@@ -155,13 +157,14 @@ export default function Main() {
 						alt={"massa-icon.png"}
 						title={"Massa"}
 						text={"Fourth generation blockchain built for the next wave of crypto creators"} />
-						</Fade>
 					</SectionLayout>
+					</Fade>
 				</div>
 				<Fade bottom>
 				<SectionLayout
 				align={"center"}
-				title={"Economics slider"} >
+				title={"What have you already missed"} >
+					{/* <Fade bottom> */}
 					<img src={SliderRings} alt="slider-rings.png" className="decoration slider-rings" />
 					<Slider>
 						<Slide
@@ -221,6 +224,7 @@ export default function Main() {
 						price={"0,7 - 1"}
 						profit={"7 000 - 10 000"} />
 					</Slider>
+					{/* </Fade> */}
 				</SectionLayout>
 				</Fade>
 				<div className="wraper container">
