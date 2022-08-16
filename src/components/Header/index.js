@@ -1,6 +1,7 @@
-import { LogoIcon } from 'assets/images'
-import { Button } from 'components'
-import './index.scss'
+import { LogoIcon } from "assets/images"
+import { Button } from "components"
+import "./index.scss"
+
 
 export default function Header() {
 

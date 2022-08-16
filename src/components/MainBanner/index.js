@@ -1,5 +1,6 @@
-import './index.scss'
-import { Button } from 'components'
+import "./index.scss"
+import { Button } from "components"
+
 
 export default function MainBanner() {
 

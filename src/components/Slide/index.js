@@ -1,5 +1,6 @@
 import "./index.scss"
 
+
 export default function Slide({img, alt, title, tokens, price, profit}) {
 
 	return(

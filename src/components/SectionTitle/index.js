@@ -1,13 +1,12 @@
-import 'components/SectionTitle/index.scss'
+import "components/SectionTitle/index.scss"
 
 
 export default function SectionTitle({title, description, align}) {
+
 	const textAlign = {
 		left:  "title--align-left",
 		center: "title--align-center"
 	}
-
-
 
 	return (
 		<div className={`title ${textAlign[align] || ""}`}>

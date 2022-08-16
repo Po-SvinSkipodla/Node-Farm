@@ -1,6 +1,6 @@
 import "./index.scss"
-import { ArrowRight } from "assets/images"
 import { ExternalLink } from "components"
+
 
 export default function Card({img, alt, title, text, link}) {
 

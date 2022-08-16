@@ -2,7 +2,9 @@ import Carousel from "nuka-carousel"
 import { useState, useLayoutEffect } from "react"
 import "./index.scss"
 
+
 export default function Slider({children}) {
+	
 	const [slides, setSlides] = useState(1);
 
 	const handleResize = (event) => {
@@ -23,6 +25,7 @@ export default function Slider({children}) {
 	return(
 		<Carousel
 		slidesToShow={slides}
+		dragThreshold={0.2}
 		defaultControlsConfig={{
 			nextButtonStyle: {
 				display: "none"
@@ -31,7 +34,7 @@ export default function Slider({children}) {
 				display: "none"
 			},
 			pagingDotsContainerClassName: "paging-dots",
-			pagingDotsClassName: "paging-dots__button"
+			pagingDotsClassName: "paging-dots__button",
 		}}
 		wrapAround
 		pauseOnHover

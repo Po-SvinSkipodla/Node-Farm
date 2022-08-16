@@ -30,10 +30,6 @@
 			transition: 0.25s linear;
 		}
 
-		// &:visited {
-		// 	background-color: $green;
-		// }
-
 		&:hover {
 			background-color: $pink;
 			color: $white;
@@ -107,7 +103,7 @@
 	}
 
 	&__text {
-		font-family: Archivo;
+		font-family: Archivo, sans-serif;
 		font-weight: 700;
 		font-size: 15px;
 		margin-right: 8px;

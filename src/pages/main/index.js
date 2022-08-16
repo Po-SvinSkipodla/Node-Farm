@@ -1,7 +1,48 @@
-import { Spiral, BtcBubble, EthBubble, Ellipse, Diamond, LinEllipse, Torus, Sphere, DiamondEllipse, SliderRings, BenefitsSpiral,
-	SphereEllDesktop, SphereEllTablet, SphereEllMobile } from "assets/images/index.js"
-import { Wallet, Docker, Favorite, Metamask, Grafana, Payment, Subspace, Aptos, Quai, Masa, Ironfish, Massa, Casper, Horp, Forta, Solana } from "assets/icons"
-import { Header, Card, Benefits, Slide, SectionLayout, Button, Footer, MainBanner, Slider } from "components"
+import {
+	Spiral,
+	BtcBubble,
+	EthBubble,
+	Ellipse,
+	Diamond,
+	LinEllipse,
+	Torus,
+	Sphere,
+	DiamondEllipse,
+	SliderRings,
+	BenefitsSpiral,
+	SphereEllDesktop,
+	SphereEllTablet,
+	SphereEllMobile
+} from "assets/images"
+import {
+	Wallet,
+	Docker,
+	Favorite,
+	Metamask,
+	Grafana,
+	Payment,
+	Subspace,
+	Aptos,
+	Quai,
+	Masa,
+	Ironfish,
+	Massa,
+	Casper,
+	Horp,
+	Forta,
+	Solana
+} from "assets/icons"
+import {
+	Header,
+	Card,
+	Benefits,
+	Slide,
+	SectionLayout,
+	Button,
+	Footer,
+	MainBanner,
+	Slider
+} from "components"
 import { Fade } from "react-reveal"
 import "./index.scss"
 
@@ -9,7 +50,6 @@ import "./index.scss"
 export default function Main() {
 	return(
 		<div className="window">
-			{/* <Fade> */}
 				<div className="hero">
 					<div className="decoration ellipse1">
 						<Ellipse />
@@ -49,7 +89,6 @@ export default function Main() {
 						</Fade>
 					</div>
 				</div>
-			{/* </Fade> */}
 			<div className="background">
 				<section className="beginners">
 				<div className="flash" />
@@ -164,7 +203,6 @@ export default function Main() {
 				<SectionLayout
 				align={"center"}
 				title={"What have you already missed"} >
-					{/* <Fade bottom> */}
 					<img src={SliderRings} alt="slider-rings.png" className="decoration slider-rings" />
 					<Slider>
 						<Slide
@@ -224,7 +262,6 @@ export default function Main() {
 						price={"0,7 - 1"}
 						profit={"7 000 - 10 000"} />
 					</Slider>
-					{/* </Fade> */}
 				</SectionLayout>
 				</Fade>
 				<div className="wraper container">
