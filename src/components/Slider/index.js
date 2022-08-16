@@ -25,7 +25,7 @@ export default function Slider({children}) {
 	return(
 		<Carousel
 		slidesToShow={slides}
-		dragThreshold={0.2}
+		dragThreshold={0.08}
 		defaultControlsConfig={{
 			nextButtonStyle: {
 				display: "none"
